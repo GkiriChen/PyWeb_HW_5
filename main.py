@@ -37,7 +37,6 @@ async def get_exchange(data: str):
 
         course = f"EUR: buy: {exc_EUR['purchaseRateNB']}, sale: {exc_EUR['saleRateNB']}. Date: {data} \nUSD: buy: {exc_USD['purchaseRateNB']}, sale: {exc_USD['saleRateNB']}. Date: {data}"
         return course
-        # return f"EUR: buy: {exc_EUR['purchaseRateNB']}, sale: {exc_EUR['saleRateNB']}. Date: {datetime.now().date()}"
 
     return "Failed to retrieve data"
 
